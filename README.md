@@ -1,5 +1,6 @@
 # Event REST API
 
+
 ## 프로젝트 참조
 인프런 스프링 기반 REST API 개발 (백기선) 강의
 
@@ -9,7 +10,7 @@
 
 ### GET /api/events
 
-이벤트 목록 조회 REST API (로그인 안 한 상태)
+> 이벤트 목록 조회 REST API (로그인 안 한 상태)
 * 응답에 보여줘야 할 데이터
     + 이벤트 목록
     + 링크 
@@ -20,11 +21,9 @@
         - next: 다음 페이지 (optional)
         - prev: 이전 페이지 (optional)
     
-* 문서? 
-
- 스프링 REST Docs
+* 문서 : 스프링 REST Docs
  
-이벤트 목록 조회 REST API (로그인 한 상태) - Bearer 헤더에 유효한 AccessToken이 들어있는 경우!
+> 이벤트 목록 조회 REST API (로그인 한 상태) - Bearer 헤더에 유효한 AccessToken이 들어있는 경우!
 
 * 응답에 보여줘야 할 데이터
     + 이벤트 목록
