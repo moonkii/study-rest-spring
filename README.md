@@ -1,13 +1,13 @@
 # Event REST API
 
-##프로젝트 참조
+## 프로젝트 참조
 인프런 스프링 기반 REST API 개발 (백기선) 강의
 
 
-##프로젝트 설명
+## 프로젝트 설명
 이벤트 등록, 조회 및 수정 API
 
-###GET /api/events
+### GET /api/events
 
 이벤트 목록 조회 REST API (로그인 안 한 상태)
 * 응답에 보여줘야 할 데이터
@@ -41,12 +41,12 @@
         
 
 
-###POST /api/events
+### POST /api/events
 *  이벤트 생성
 
 
-###GET /api/events/{id}
+### GET /api/events/{id}
 *  이벤트 하나 조회
 
-###PUT /api/events/{id}
+### PUT /api/events/{id}
 *  이벤트 수정
