@@ -2,6 +2,9 @@ package com.example.demorest.events;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import java.time.LocalDateTime;
 
 
@@ -10,6 +13,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor          //디폴트 생성자를 만들어주는 어노테이션
 @Getter @Setter             //getter setter 생성
 @EqualsAndHashCode(of="id") //연관 관계가 있는 변수 지정 ( stack of flow 방지 )
+@Entity
 public class Event {
 
     private Integer id;                             //이벤트 식별 번호
@@ -25,7 +29,9 @@ public class Event {
     private int limitOffEnrollment;                 //이벤트 참가 제한 수
     private boolean offline;                        //온/오프라인 구분
     private boolean free;                           //무료 여부 구분
+    @Enumerated(EnumType.STRING)
     private EventStatus eventStatus;                //이벤트 상태
+
 
 
 
