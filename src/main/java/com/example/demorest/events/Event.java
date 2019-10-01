@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode(of="id") //연관 관계가 있는 변수 지정 ( stack of flow 방지 )
 public class Event {
 
-    private Integer id;
+    private Integer id;                             //이벤트 식별 번호
     private String name;                            //이벤트 명
     private String descrption;                      //이벤트 설명
     private LocalDateTime beginEnrollmentDateTime;  //이벤트 등록 시작 일시
@@ -20,8 +20,8 @@ public class Event {
     private LocalDateTime beginEventDateTime;       //이벤트 시작 일시
     private LocalDateTime endEventDateTime;         //이벤트 종료 일시
     private String location;                        //장소 (optional) 이게 없으면 온라인 모임
-    private int basePrice;                          //기본 가격 (optional)
-    private int maxPrice;                           //최대 가격 (optional)
+    private int basePrice;                          //등록 비 기본 가격 (optional)
+    private int maxPrice;                           //등록 최대 가격 (optional)
     private int limitOffEnrollment;                 //이벤트 참가 제한 수
     private boolean offline;                        //온/오프라인 구분
     private boolean free;                           //무료 여부 구분
